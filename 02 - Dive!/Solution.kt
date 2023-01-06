@@ -1,11 +1,13 @@
-val input = object {}.javaClass.getResource("input.txt")!!.readText()
+package nl.erwinolie.`Advent-of-Code-2021`.`02 - Dive!`
+
+import nl.erwinolie.extensions.input
 
 var submarine1 = Position(0, 0)
 var submarine2 = Position(0, 0)
 var aim2 = 0
 
 fun main() {
-    input.lines()
+    input().lines()
         .forEach {
             val direction = it.split(' ')[0]
             val units = it.split(' ')[1].toInt()
@@ -18,7 +20,7 @@ fun main() {
 
     println(submarine1.x * submarine1.depth)
 
-    input.lines()
+    input().lines()
         .forEach {
             val direction = it.split(' ')[0]
             val units = it.split(' ')[1].toInt()
