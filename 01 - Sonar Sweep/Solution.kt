@@ -1,4 +1,8 @@
-val input = object {}.javaClass.getResource("input.txt")!!.readText()
+package nl.erwinolie.`Advent-of-Code-2021`.`01 - Sonar Sweep`
+
+import nl.erwinolie.extensions.input
+
+val input = input()
     .lines()
     .map { it.toInt() }
 
